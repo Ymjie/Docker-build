@@ -266,10 +266,10 @@ def init_config():
     conf_dict.setdefault("TG_CONNECT_TIMEOUT", 10)
 
     # listen address for IPv4
-    conf_dict.setdefault("LISTEN_ADDR_IPV4", "127.0.0.1")
+    conf_dict.setdefault("LISTEN_ADDR_IPV4", "0.0.0.0")
 
     # listen address for IPv6
-    conf_dict.setdefault("LISTEN_ADDR_IPV6", "::1")
+    conf_dict.setdefault("LISTEN_ADDR_IPV6", "::")
 
     # listen unix socket
     conf_dict.setdefault("LISTEN_UNIX_SOCK", "")
@@ -278,7 +278,7 @@ def init_config():
     conf_dict.setdefault("METRICS_PORT", None)
 
     # prometheus listen addr ipv4
-    conf_dict.setdefault("METRICS_LISTEN_ADDR_IPV4", "127.0.0.1")
+    conf_dict.setdefault("METRICS_LISTEN_ADDR_IPV4", "0.0.0.0")
 
     # prometheus listen addr ipv6
     conf_dict.setdefault("METRICS_LISTEN_ADDR_IPV6", None)
