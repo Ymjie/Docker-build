@@ -269,7 +269,7 @@ def init_config():
     conf_dict.setdefault("LISTEN_ADDR_IPV4", "127.0.0.1")
 
     # listen address for IPv6
-    conf_dict.setdefault("LISTEN_ADDR_IPV6", "::")
+    conf_dict.setdefault("LISTEN_ADDR_IPV6", "::1")
 
     # listen unix socket
     conf_dict.setdefault("LISTEN_UNIX_SOCK", "")
@@ -278,7 +278,7 @@ def init_config():
     conf_dict.setdefault("METRICS_PORT", None)
 
     # prometheus listen addr ipv4
-    conf_dict.setdefault("METRICS_LISTEN_ADDR_IPV4", "127.0.0.1)
+    conf_dict.setdefault("METRICS_LISTEN_ADDR_IPV4", "127.0.0.1")
 
     # prometheus listen addr ipv6
     conf_dict.setdefault("METRICS_LISTEN_ADDR_IPV6", None)
